@@ -97,9 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1 {
-    text-align: center;
+body {
+
+}
+
+#header {
+    margin: 1em;
+}
+
+a {
     color: #F06292;
+}
+
+h1 {
+    color: #F06292;
+    text-align: center;
     padding-bottom: 1em;
     border-bottom: solid 2px;
 }
