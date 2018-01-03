@@ -23,7 +23,7 @@ function handleQueryResponse(response) {
         theme: 'material',
         width: '100%',
         height: 800,
-        chartArea: { width: '60%', height: '80%', right: '29%' },
+        chartArea: { width: '60%', height: '80%', right: '29%', top: '5%' },
         vAxis: {
             direction:-1,
             ticks: ticks,
