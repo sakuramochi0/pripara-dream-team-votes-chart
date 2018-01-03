@@ -16,7 +16,7 @@ function handleQueryResponse(response) {
         theme: 'material',
         width: '100%',
         height: 800,
-        chartArea: { width: '60%', height: '80%' },
+        chartArea: { width: '60%', height: '80%', right: '28%' },
         vAxis: { direction:-1, minValue: 1, maxValue: 16 },
         pointSize: 8,
         lineWith: 4,
