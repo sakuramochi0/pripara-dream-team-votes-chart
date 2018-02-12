@@ -1,4 +1,4 @@
-const URL = 'https://docs.google.com/spreadsheets/d/1WOwQf4tjLCslhMTnLFb44ATlDwIBBTlhCfscHlPRTfw/gviz/tq?gid=0&headers=1&range=A:S';
+const URL = 'https://docs.google.com/spreadsheets/d/1WOwQf4tjLCslhMTnLFb44ATlDwIBBTlhCfscHlPRTfw/gviz/tq?gid=0&headers=1&range=A:AK';
 
 google.charts.load('current', {packages: ['corechart'], language: 'ja'});
 google.charts.setOnLoadCallback(drawChart);
@@ -10,14 +10,14 @@ function drawChart() {
 
 function handleQueryResponse(response) {
     const data = response.getDataTable();
-    // const chart = new google.charts.Line(document.getElementById('chart'));
     const chart = new google.visualization.LineChart(document.getElementById('chart'));
-    var ticks = [];
-    for (var i = 1; i <= 15; i++) ticks.push(i);
+    const ticks = [];
+    const chara_num = 36;
+    for (let i = 1; i <= chara_num; i++) ticks.push(i);
     ticks.push(
         {v: 0, f: ''}, // 1位の上の余白
-        {v: 20, f: '圏外'},
-        {v: 21, f: ''} // 一番下の余白
+        {v: 40, f: '圏外'},
+        {v: 41, f: ''} // 一番下の余白
     );
     // 次のキャラ順に色を割り当てること
     // あろま らぁら みれぃ ひびき コヨイ
